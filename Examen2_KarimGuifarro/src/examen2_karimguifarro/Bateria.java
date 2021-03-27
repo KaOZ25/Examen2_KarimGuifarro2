@@ -5,14 +5,16 @@
  */
 package examen2_karimguifarro;
 
-import java.util.logging.Logger;
 
-
-public class Bateria {
+public class Bateria extends vehiculo{
   String material;
  int autonomia;
 
-    public Bateria(String material, int autonomia) {
+    public Bateria() {
+    }
+
+    public Bateria(String material, int autonomia, int VIN, String color, String bateria, String carroceria, String interior, String infoentretenimiento, String asientos) {
+        super(VIN, color, bateria, carroceria, interior, infoentretenimiento, asientos);
         this.material = material;
         this.autonomia = autonomia;
     }
@@ -33,5 +35,12 @@ public class Bateria {
         this.autonomia = autonomia;
     }
 
+    public String getBateria() {
+        return bateria;
+    }
+
+    public void setBateria(String bateria) {
+        this.bateria = bateria;
+    }
     
 }

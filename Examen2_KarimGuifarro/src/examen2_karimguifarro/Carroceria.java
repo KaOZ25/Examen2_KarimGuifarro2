@@ -9,14 +9,15 @@ package examen2_karimguifarro;
  *
  * @author Karim Ozael
  */
-public class Carroceria {
+public class Carroceria extends vehiculo{
     String tipo;
     int cap_maletero;
 
     public Carroceria() {
     }
 
-    public Carroceria(String tipo, int cap_maletero) {
+    public Carroceria(String tipo, int cap_maletero, int VIN, String color, String bateria, String carroceria, String interior, String infoentretenimiento, String asientos) {
+        super(VIN, color, bateria, carroceria, interior, infoentretenimiento, asientos);
         this.tipo = tipo;
         this.cap_maletero = cap_maletero;
     }
@@ -36,5 +37,12 @@ public class Carroceria {
     public void setCap_maletero(int cap_maletero) {
         this.cap_maletero = cap_maletero;
     }
-    
+
+    public String getCarroceria() {
+        return carroceria;
+    }
+
+    public void setCarroceria(String carroceria) {
+        this.carroceria = carroceria;
+    }
 }

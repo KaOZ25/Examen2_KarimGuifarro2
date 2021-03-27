@@ -9,14 +9,15 @@ package examen2_karimguifarro;
  *
  * @author Karim Ozael
  */
-public class Infoentretenimiento {
+public class Infoentretenimiento extends vehiculo{
     int cant_pantalla,ancho_pantalla;
     boolean visor;
 
     public Infoentretenimiento() {
     }
 
-    public Infoentretenimiento(int cant_pantalla, int ancho_pantalla, boolean visor) {
+    public Infoentretenimiento(int cant_pantalla, int ancho_pantalla, boolean visor, int VIN, String color, String bateria, String carroceria, String interior, String infoentretenimiento, String asientos) {
+        super(VIN, color, bateria, carroceria, interior, infoentretenimiento, asientos);
         this.cant_pantalla = cant_pantalla;
         this.ancho_pantalla = ancho_pantalla;
         this.visor = visor;
@@ -44,6 +45,14 @@ public class Infoentretenimiento {
 
     public void setVisor(boolean visor) {
         this.visor = visor;
+    }
+
+    public String getInfoentretenimiento() {
+        return infoentretenimiento;
+    }
+
+    public void setInfoentretenimiento(String infoentretenimiento) {
+        this.infoentretenimiento = infoentretenimiento;
     }
     
 }

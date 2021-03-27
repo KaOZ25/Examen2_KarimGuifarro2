@@ -4,17 +4,12 @@ package examen2_karimguifarro;
 
 public class vehiculo {
     int VIN;
-    String color;
-    Bateria bateria;
-    Carroceria carroceria;
-    Interior interior;
-    Infoentretenimiento  infoentretenimiento;
-    Asientos asientos;
+    String color, bateria,carroceria,interior, infoentretenimiento,asientos;
 
     public vehiculo() {
     }
 
-    public vehiculo(int VIN, String color, Bateria bateria, Carroceria carroceria, Interior interior, Infoentretenimiento infoentretenimiento, Asientos asientos) {
+    public vehiculo(int VIN, String color, String bateria, String carroceria, String interior, String infoentretenimiento, String asientos) {
         this.VIN = VIN;
         this.color = color;
         this.bateria = bateria;
@@ -40,44 +35,50 @@ public class vehiculo {
         this.color = color;
     }
 
-    public Bateria getBateria() {
+    public String getBateria() {
         return bateria;
     }
 
-    public void setBateria(Bateria bateria) {
+    public void setBateria(String bateria) {
         this.bateria = bateria;
     }
 
-    public Carroceria getCarroceria() {
+    public String getCarroceria() {
         return carroceria;
     }
 
-    public void setCarroceria(Carroceria carroceria) {
+    public void setCarroceria(String carroceria) {
         this.carroceria = carroceria;
     }
 
-    public Interior getInterior() {
+    public String getInterior() {
         return interior;
     }
 
-    public void setInterior(Interior interior) {
+    public void setInterior(String interior) {
         this.interior = interior;
     }
 
-    public Infoentretenimiento getInfoentretenimiento() {
+    public String getInfoentretenimiento() {
         return infoentretenimiento;
     }
 
-    public void setInfoentretenimiento(Infoentretenimiento infoentretenimiento) {
+    public void setInfoentretenimiento(String infoentretenimiento) {
         this.infoentretenimiento = infoentretenimiento;
     }
 
-    public Asientos getAsientos() {
+    public String getAsientos() {
         return asientos;
     }
 
-    public void setAsientos(Asientos asientos) {
+    public void setAsientos(String asientos) {
         this.asientos = asientos;
     }
+
+    @Override
+    public String toString() {
+        return "vehiculo{" + "VIN=" + VIN + '}';
+    }
+
     
 }

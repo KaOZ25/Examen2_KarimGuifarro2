@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package examen2_karimguifarro;
 
-/**
- *
- * @author Karim Ozael
- */
-public class orden_armado extends vehiculo {
+public class orden_armado {
+    vehiculo vehi;
+    Ensamblador ensam;
+
+    public orden_armado() {
+    }
+    
+    public orden_armado(vehiculo vehi, Ensamblador ensam) {
+        this.vehi = vehi;
+        this.ensam = ensam;
+    }
+
+    public vehiculo getVehi() {
+        return vehi;
+    }
+
+    public void setVehi(vehiculo vehi) {
+        this.vehi = vehi;
+    }
+
+    public Ensamblador getEnsam() {
+        return ensam;
+    }
+
+    public void setEnsam(Ensamblador ensam) {
+        this.ensam = ensam;
+    }
     
 }

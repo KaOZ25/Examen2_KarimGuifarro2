@@ -9,14 +9,15 @@ package examen2_karimguifarro;
  *
  * @author Karim Ozael
  */
-public class Asientos {
+public class Asientos extends vehiculo{
     String material,tipo;
     boolean masaje;
 
     public Asientos() {
     }
 
-    public Asientos(String material, String tipo, boolean masaje) {
+    public Asientos(String material, String tipo, boolean masaje, int VIN, String color, String bateria, String carroceria, String interior, String infoentretenimiento, String asientos) {
+        super(VIN, color, bateria, carroceria, interior, infoentretenimiento, asientos);
         this.material = material;
         this.tipo = tipo;
         this.masaje = masaje;
@@ -44,6 +45,14 @@ public class Asientos {
 
     public void setMasaje(boolean masaje) {
         this.masaje = masaje;
+    }
+
+    public String getAsientos() {
+        return asientos;
+    }
+
+    public void setAsientos(String asientos) {
+        this.asientos = asientos;
     }
     
 }
